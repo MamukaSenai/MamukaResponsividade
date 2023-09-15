@@ -1,0 +1,146 @@
+
+:root {
+    --czclaro: #405189;
+    --czescuro: #2C2E3E;
+    --branco: #ffffff;
+    --azulC: #0073EA;
+
+    --font1: 'Righteous', cursive;
+    --font2: 'Titillium Web', sans-serif;
+}
+
+
+body 
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+
+
+main 
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+
+.esquerda {
+    width: 50vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--branco);
+}
+
+.esquerda img {
+    width: 60%;
+
+}
+
+
+.esquerda h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--czclaro);
+    align-items: center;
+}
+
+
+
+.direita {
+    width: 50vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--czclaro);
+}
+
+.direita img {
+    margin-top: 5px;
+}
+
+.direita p {
+    color: var(--branco);
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+}
+
+.direita a {
+    color: var(--branco);
+}
+
+.direita form {
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.direita h2 {
+    color: white;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.label-input label {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.label-input input {
+    height: 60px;
+    border-radius: 7px;
+    border: none;
+    text-indent: 5px;
+    font-size: 30px;
+    background-color: var(--branco);
+    color: white;
+}
+
+.direita button {
+    background-color: var(--azulC);
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.direita button:hover {
+    background-color: var(--czclaro)
+}
+
+@media screen and (max-width: 768px) {
+    .esquerda {
+        display: none;
+    }
+
+    .direita {
+        width: 100vh;
+        height: 100vh;
+    }
+}

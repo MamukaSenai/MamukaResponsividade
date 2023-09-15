@@ -1,0 +1,372 @@
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/* Declaracao geral */
+:root
+    {
+    --azulC: #0073EA;
+    --azulM: #405189;
+    --azulE: #2C2E3E;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --verde: #07f60b;
+    --vermelho: #f60707;
+    --cinza: #2C2E3E;
+    --cinzaclaro: #7C7C7C;
+
+    --font1: 'Titillium Web', sans-serif;
+    --font2: 'Righteous', cursive;
+    }
+
+
+
+/* body */
+body
+    {
+        position: relative;
+        min-height: 100vh;
+        width: 100vw;
+    }
+/* body */
+
+
+
+/* header */
+/* configura o cabecalho */
+.menu_sup
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100vw; /*define a largura da faixa azul em 100% da tela */
+        height: 12vh; /*define a altura da faixa azul em 12% da tela */
+        padding-left: 15vh; /*define uma margem para receber o menu hamburgue */        
+        background: var(--azulM) 
+    }
+
+.logo img
+    {
+        display: flex;
+        justify-content: space-between;       
+        align-items: center; /*centraliza o logo na altura*/
+        width: 20vw; /*define a largura da faixa azul em 100% da tela */
+        height: 10vh; /*define a altura da faixa azul em 10% da tela */
+    }
+
+
+/* configura o campo de busca */
+#divBusca
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color:var(--branco);
+        border:solid 1px;
+        border-radius:10px;
+        width: 18vw; /*define a largura do campo de busca em 18%*/
+        height: 5vh; /*define a altura do campo de busca em 5%*/        
+     
+    }
+ 
+/* configura o texto do usuario logado */
+.usuario
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        text-transform: capitalize;
+        color: var(--branco);
+        padding-right: 10vh; /*define uma margem para receber o menu hamburgue */  
+    }
+
+
+.setaLogado
+    {
+        padding-left: 2vh; /*define uma margem para distanciar a seta do texto */   
+    } 
+
+/* header */
+/* Main */
+/* define os recuo dentro da area da main */
+main
+    { 
+        padding: 10px 10px 10px 10px;
+        /* margin-left: 20px; */
+    }
+
+
+.linha_sup_status 
+    {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin-bottom: 1%;
+        font-size: 20px;
+    }
+
+
+/* posiciona o texto "administrador/cadastro" */    
+.linha_sup_esq
+    {
+        text-transform: capitalize;
+        border-radius: 10px;      
+         
+        display: flex;            
+        color: var(--cinzaclaro);
+        font-size: 20px;
+
+        /* display: flex;
+        justify-content: space-evenly;*/
+
+        padding: 10px;
+        padding-top: 6px;
+        /*flex-direction: row-reverse;     */ 
+    }
+
+
+
+.limiteformulario
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 1vh;
+        width: 60vw;
+        height: 65vh;
+
+        border-top: 10px solid var(--azulC);
+        border-bottom: 10px solid var(--azulC);
+        border-left: 2px solid var(--cinzaclaro);
+        border-right:  2px solid var(--cinzaclaro);
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+
+
+
+
+.linha1 , /*coloca os campos input em linha*/
+.linha2 ,
+.linha3,
+.linha4 
+    {
+        width: 60vw; /*define o tamanho do formulario */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+
+
+.linha1Coluna1, /*define o espaçamentos entre as linhas*/
+.linha2Coluna1,
+.linha2Coluna2,
+.linha2Coluna3,
+.linha3Coluna1,
+.linha3Coluna2,
+.linha3Coluna3,
+.linha4Coluna1 
+    { /*superior, direito, inferior, esquerdo*/
+        padding: 1vh 2vw 1vh 2vw;
+    }
+
+
+
+.linha1Coluna1 label, /*define a configuração label dos campos input */
+.linha2Coluna1 label,
+.linha2Coluna2 label,
+.linha2Coluna3 label,
+.linha3Coluna1 label,
+.linha3Coluna2 label,
+.linha3Coluna3 label,
+.linha4Coluna1 label
+    {  /*superior, direito, inferior, esquerdo*/
+        padding: 1vh 0vw 0vh 3px;
+        display: flex;
+    }
+
+
+.linha1Coluna1 input, /*define a configuração dos campos input */
+.linha2Coluna1 input,
+.linha2Coluna2 input,
+.linha2Coluna3 input,
+.linha3Coluna1 input,
+.linha3Coluna2 input,
+.linha3Coluna3 input,
+.linha4Coluna1 input
+    {
+      /*  border-radius: 15px;arredonda os campos de input 
+        border: solid 1px;*/
+        padding: 1vh 1vw 1vh 0vw;
+
+        height: 30px;
+        width: 250px;
+        border-radius: 7px;
+        border: solid 1px;
+        text-indent: 5px;
+        font-size: 15px;
+        color: var(--cinzaclaro);
+    }
+
+
+.linha1Coluna1 input /*define a configuração dos campos input */
+    {
+        width: 56vw; /*define o tamanho dos campos do formulario */    
+    }
+
+
+.linha2Coluna1 input,
+.linha2Coluna2 input,
+.linha2Coluna3 input
+    {
+        width: 16vw; /*define o tamanho dos campos do formulario */    
+    }
+
+
+.linha3Coluna1 input,
+.linha3Coluna2 input,
+.linha3Coluna3 input
+    {
+        width: 16vw; /*define o tamanho dos campos do formulario */    
+    }
+
+
+.linha4Coluna1 input
+    {
+        width: 56vw; /*define o tamanho dos campos do formulario */    
+    }
+
+
+.botao
+    {
+        
+        border-radius: 5px;
+        font-size: 20px;
+        color: var(--branco);
+        background-color: var(--azulM); 
+        margin-top: 20px;
+
+        /* margin-left: 50vw; */
+        padding-left: 10px;
+        padding-right: 10px;
+
+
+        font-weight: bold;
+        justify-content: flex-end;
+    }    
+
+
+
+/* Main */
+/* Quando a resolução for menor que 820px esconde o campo de busca */
+@media screen and (max-width: 820px) 
+{
+    /* HEADER */
+    .menu_sup
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100vw; /*define a largura da faixa azul em 100% da tela */
+        height: 12vh; /*define a altura da faixa azul em 12% da tela */
+        padding-left: 15vh; /*define uma margem para receber o menu hamburgue */        
+        background: var(--azulM) 
+    }
+            
+    /* HEADER */       
+    .logo img
+    {
+        display: flex;
+        justify-content: space-between;       
+        align-items: center; /*centraliza o logo na altura*/
+        width: 30vw; /*define a largura da faixa azul em 30% da tela */
+        height: 8vh; /*define a altura da faixa azul em 8% da tela */
+    }
+
+
+    /* HEADER */
+    .nomeLogado
+    {
+        position: absolute;
+        left: -300px;
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+    .setaLogado 
+    {
+        position: absolute;
+        left: -300px;
+        overflow-x: hidden;          
+    }
+
+    .fotoNovoUsuario img
+    {
+        width: 20vw; /*define o tamanho do formulario 2% maior que os campo*/
+        height: 15vh;
+        display: flex;
+        /* padding: 0vh 1vw 1vh 1vw; */
+        align-items: center;
+        margin: 0 auto;
+    }  
+}
+
+
+
+
+/* Quando a resolução for menor que 760px esconde o campo de busca */
+@media screen and (max-width: 760px) 
+{
+
+/* HEADER */ 
+    #divBusca
+    {
+        position: absolute;
+        left: -300px;
+        overflow-x: hidden;
+    }
+}
+
+
+/* Quando a resolução for menor que 408px esconde o campo de busca */
+@media screen and (max-width: 408px) 
+{
+    /* HEADER */
+    .menu_sup
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:110vw; /*define a largura da faixa azul em 100% da tela */
+        height: 13vh; /*define a altura da faixa azul em 12% da tela */
+        padding-left: 15vh; /*define uma margem para receber o menu hamburgue */        
+        background: var(--azulM) 
+    }
+}
+
+
+/* Quando a resolução for menor que 408px esconde o campo de busca */
+@media screen and (max-width: 370px) 
+{
+    /* HEADER */
+    .menu_sup
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:120vw; /*define a largura da faixa azul em 120% da tela */
+        height: 14vh; /*define a altura da faixa azul em 14% da tela */
+        padding-left: 15vh; /*define uma margem para receber o menu hamburgue */        
+        background: var(--azulM) 
+    }
+}
